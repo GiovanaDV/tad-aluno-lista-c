@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "aluno.h"
+#include "lista.h"
 Aluno criarAluno(const char *nome, int rm, float nota) {
     Aluno a;
     strncpy(a.nome, nome, sizeof(a.nome));
@@ -14,4 +15,10 @@ void imprimirAluno(Aluno a) {
 
 void alterarNota(Aluno *a, float novaNota) {
     a->nota = novaNota;
+}
+
+void removerUltimo(Lista *l) {
+    if (l->tamanho > 0) {
+        l->tamanho--;
+    }
 }
