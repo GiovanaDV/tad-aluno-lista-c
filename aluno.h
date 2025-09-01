@@ -9,5 +9,4 @@ typedef struct {
 Aluno criarAluno(const char *nome, int rm, float nota);
 void imprimirAluno(Aluno a);
 void alterarNota(Aluno *a, float novaNota);
-
 #endif

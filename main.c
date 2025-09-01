@@ -23,6 +23,11 @@ int main() {
 
     printf("\nLista de alunos após alteração de notas:\n");
     imprimirLista(turma);
+
+    // Remove o último aluno da lista
+    removerUltimo(&turma);
+    printf("\nLista de alunos após remoção do último aluno:\n");
+    imprimirLista(turma);
     
     return 0;
 }
