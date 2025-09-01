@@ -17,5 +17,12 @@ int main() {
     printf("Lista de alunos:\n");
     imprimirLista(turma);
 
+    // Altera as notas dos alunos dentro da lista
+    alterarNota(&turma.dados[0], 9.0);
+    alterarNota(&turma.dados[1], 8.0);
+
+    printf("\nLista de alunos após alteração de notas:\n");
+    imprimirLista(turma);
+    
     return 0;
 }
