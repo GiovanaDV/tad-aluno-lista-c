@@ -29,5 +29,15 @@ int main() {
     printf("\nLista de alunos após remoção do último aluno:\n");
     imprimirLista(turma);
     
+    int rmProcurado = 558761;
+    int indice = buscarAlunoPorRM(turma, rmProcurado);
+
+    printf("\nBuscando aluno com RM %d:\n", rmProcurado);
+    if (indice != -1) {
+        imprimirAluno(turma.dados[indice]);
+    } else {
+        printf("Aluno não encontrado!\n");
+    }
+    
     return 0;
 }
