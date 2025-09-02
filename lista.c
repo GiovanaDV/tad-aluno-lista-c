@@ -19,3 +19,12 @@ void imprimirLista(Lista l) {
         imprimirAluno(l.dados[i]);
     }
 }
+
+int buscarAlunoPorRM(Lista l, int rm) {
+    for (int i = 0; i < l.tamanho; i++) {
+        if (l.dados[i].rm == rm) {
+            return i; // aluno encontrado
+        }
+    }
+    return -1; // aluno não encontrado
+}
