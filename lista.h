@@ -16,6 +16,6 @@ int inserirAluno(Lista *l, Aluno a);
 void imprimirLista(Lista l);
 void removerUltimo(Lista *l);
 int buscarAlunoPorRM(Lista l, int rm);
-
+float calcularMedia(Lista l);
 
 #endif

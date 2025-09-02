@@ -38,6 +38,11 @@ int main() {
     } else {
         printf("Aluno não encontrado!\n");
     }
-    
+
     return 0;
+
+    // Calcular a média do aluno
+    float media = calcularMedia(turma);
+    printf("\nMédia da turma: %.2f\n", media);
+
 }

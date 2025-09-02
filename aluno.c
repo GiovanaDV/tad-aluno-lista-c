@@ -22,3 +22,13 @@ void removerUltimo(Lista *l) {
         l->tamanho--;
     }
 }
+
+float calcularMedia(Lista l) {
+    if (l.tamanho == 0) return 0;
+
+    float soma = 0;
+    for (int i = 0; i < l.tamanho; i++) {
+        soma += l.dados[i].nota;
+    }
+    return soma / l.tamanho;
+}
